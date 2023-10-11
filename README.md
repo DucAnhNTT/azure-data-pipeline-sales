@@ -25,40 +25,57 @@ This project showcases the creation and execution of a comprehensive data pipeli
 ![](./image/architecture.jpg)
 
 ## Overview
-  ### Database Schema
-  ![](./dataForProject/image/dvdrental-schema.png)
-  ### Dimensional Modeling with Sales
-  ![](./dataForProject/image/dvdrentalDW-schema.png) 
-  ### Building report
-  ![](./dataForProject/image/reportDVD.png) 
+Database Schema
+
+
+Dimensional Modeling with Sales
+
+
+Building report
+
+
+Data Lake Architecture
+The data lake architecture consists of three layers:
+
+Bronze Layer:
+This is the raw data layer where data is ingested from various source systems. The data in this layer is an exact copy of the source data.
+
+Silver Layer:
+This is the cleaned and processed data layer. Data from the Bronze layer is transformed and loaded into this layer. Simple transformations like changing column names and types for compatibility in the cloud are performed in this layer.
+
+Gold Layer:
+This is the final, cleanest form of data which is ready for consumption by end users or downstream systems. The data in this layer is highly aggregated and optimized for reporting and analytics.
 
 ## How it works
-* Data Sources:
+Data Sources:
 
-    OLTP PostgreSQL Database: The primary source of transactional data.
+SQL Server On-Prem: The primary source of transactional data.
 
-    Flat Files: Additional data sources in various formats.
-* Data Ingestion:
+Data Ingestion:
 
-    Apache Hadoop HDFS: Serves as the data lake for ingesting raw data.
+Azure Integration Runtime: Connects on-premises SQL Server to Azure services.
 
-* Data Transformation:
+Azure Data Lake Storage Gen2: Serves as the data lake for ingesting raw data.
 
-    Apache Hive: The data warehouse for structured data storage and transformation.
+Data Transformation:
 
-    Apache Spark: Powers ETL (Extract, Transform, Load) processes for data processing.
-* Data Modeling:
+Azure Databricks: Powers ETL (Extract, Transform, Load) processes for data processing.
 
-    Hive QL: Used for defining and applying data models on top of the structured data.
-* Data Visualization:
+Data Modeling:
 
-    Apache Superset: Provides a rich and interactive interface for data exploration and visualization.
-* Orchestration and Workflow:
+Azure Data Factory: Used for defining and applying data models on top of the structured data.
 
-    Apache Airflow: Manages and schedules data pipeline workflows.
-* Docker: 
+Data Visualization:
 
-    Containerizes and isolates components for easy deployment and scalability.
+Power BI: Provides a rich and interactive interface for data exploration and visualization.
+
+Orchestration and Workflow:
+
+Azure Data Factory: Manages and schedules data pipeline workflows.
+
+Azure Synapse Analytics:
+
+Provides a unified experience to ingest, prepare, manage, and serve data for immediate business intelligence and machine learning needs.
 
 
 
