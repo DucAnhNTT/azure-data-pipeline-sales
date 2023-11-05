@@ -27,7 +27,7 @@ This project showcases the creation and execution of a comprehensive data pipeli
 ## Overview
 
 ### Database Schema
-     ![](./image/database-schema.jpg)
+![](./image/database-schema.jpg)
 
 
 Dimensional Modeling with Sales
