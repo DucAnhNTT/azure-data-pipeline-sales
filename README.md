@@ -17,8 +17,6 @@ I will guide you step by step to complete this project in each section. Let's go
     * [Azure Data Factory](#azure-data-factory)
     * [Azure Synapse Analytics](#azure-synapse-analytics)
     * [Power BI](#power-bi)
-* [Configure Environment Variables](#configure-environment-variables)
-* [References](#references)
 * [Demo](#demo)
 * [Contact](#contact)
 
@@ -96,14 +94,9 @@ What you need to run the project:
 
 - Azure Databricks: is used for data transformation and processing. 
 
-
-## References
-Inspired by following codes, articles and videos:
-
-* [Docker's document](https://www.linkedin.com/pulse/dockerizing-hadoop-hive-spark-sqoop-job-thomas/)
-* [Configuration containers](https://www.linkedin.com/pulse/dockerizing-hadoop-hive-spark-sqoop-job-thomas/)
-* [Furthermore of docker](https://docs.docker.com/desktop/networking/)
-
+## Demo
+- Click the link to the Demo:  
+  [Link](https://www.youtube.com/watch?v=xLFjE2WJaoM)
 
 ## Contact
 Please feel free to contact me if you have any questions.
