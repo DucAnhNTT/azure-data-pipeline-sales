@@ -29,14 +29,10 @@ This project showcases the creation and execution of a comprehensive data pipeli
 ### Database Schema
 ![](./image/database-schema.jpg)
 
+### Building report
+![](./image/visualize-power-bi.png)
 
-Dimensional Modeling with Sales
-
-
-Building report
-
-
-Data Lake Architecture
+### Data Lake Architecture
 The data lake architecture consists of three layers:
 
 Bronze Layer:
@@ -49,29 +45,29 @@ Gold Layer:
 This is the final, cleanest form of data which is ready for consumption by end users or downstream systems. The data in this layer is highly aggregated and optimized for reporting and analytics.
 
 ## How it works
-Data Sources:
+### Data Sources:
 
 SQL Server On-Prem: The primary source of transactional data.
 
-Data Ingestion:
+### Data Ingestion:
 
 Azure Integration Runtime: Connects on-premises SQL Server to Azure services.
 
 Azure Data Lake Storage Gen2: Serves as the data lake for ingesting raw data.
 
-Data Transformation:
+### Data Transformation:
 
 Azure Databricks: Powers ETL (Extract, Transform, Load) processes for data processing.
 
-Data Modeling:
+### Data Modeling:
 
 Azure Data Factory: Used for defining and applying data models on top of the structured data.
 
-Data Visualization:
+### Data Visualization:
 
 Power BI: Provides a rich and interactive interface for data exploration and visualization.
 
-Orchestration and Workflow:
+###Orchestration and Workflow:
 
 Azure Data Factory: Manages and schedules data pipeline workflows.
 
