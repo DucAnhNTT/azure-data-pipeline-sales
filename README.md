@@ -1,7 +1,6 @@
 # Azure end-to-end Data Pipeline from On-prem to Report 
 
-This project is simply about making and running a complete system that handles data. We use Azure services to change, store, and visualize data.
-
+This project showcases the creation and execution of a comprehensive data pipeline, utilizing Azure services for data manipulation, storage, and visualization within an analytics framework.
 
 
 A good use case of this project is migrating the on-prem database to Cloud. I will guide you step by step to complete this project in each section. Let's go!
