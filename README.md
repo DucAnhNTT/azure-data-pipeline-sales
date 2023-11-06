@@ -14,8 +14,6 @@ A good use case of this project is migrating the on-prem database to Cloud. I wi
   * [Database Schema](#database-schema)
   * [Building Report](#building-Report)
   * [Data Lake Architecture](#datalake-architecture)
-
-  ### Building report
 * [How it works](#how-it-works)
 * [Prerequisites](#prerequisites)
 * [Demo](#demo)
