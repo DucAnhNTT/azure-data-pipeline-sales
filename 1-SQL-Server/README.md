@@ -15,7 +15,7 @@
 
 Then you need to create login and set your privilege, you can do that following the file ""./script/createlogin.sql""
 
-![](./image/run-script.pngpng)
+![](./image/run-script.png)
 
 
 ## Contact
