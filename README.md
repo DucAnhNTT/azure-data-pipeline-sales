@@ -26,6 +26,9 @@ I will guide you step by step to complete this project in each section. Let's go
 
 ## Overview
 
+### Resource group
+![](./image/resource-group.png)
+
 ### Database Schema
 ![](./image/database-schema.jpg)
 
