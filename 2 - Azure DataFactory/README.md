@@ -1,5 +1,4 @@
-# SQL Server Configuration
-  The first ever step is to have a Database that we can work on. In this project I will pick AdventureWorkLT2017
+# Azure DataFactory
 
 
 ### Table of contents
@@ -22,8 +21,6 @@ It's always a best pratice to store your credential in some place safe and secur
 Create your Key Vault and choose the Resource Group we have created for this project (If not you can create one from here)
 
 ![](./image/key-vault-init.png)
-
-Well done, now you have set up the enviroment for our project! Continue I'm going to show you how to connect from SSMS to Azure, and load the data from 
 
 
 ## Contact

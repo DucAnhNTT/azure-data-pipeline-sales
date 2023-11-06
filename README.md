@@ -1,8 +1,7 @@
 # Azure end-to-end Data Pipeline from On-prem to Report 
 
-This project showcases the creation and execution of a comprehensive data pipeline, utilizing Azure services for data manipulation, storage, and visualization within an analytics framework. 
-
-I will guide you step by step to complete this project in each section. Let's go!
+This project is simply about making and running a complete system that handles data. We use Azure services to change, store, and visualize data.
+A good use case of this project is migrating the on-prem database to Cloud. I will guide you step by step to complete this project in each section. Let's go!
 
 ### Table of contents
 
@@ -77,8 +76,12 @@ Azure Synapse Analytics: Provides a unified experience to ingest, prepare, manag
 ## Prerequisites
 What you need to run the project:
 
-- Azure Subscription - You will need an Azure subscription to create and manage the resources used in this project.
+- I have play around a lot in this project and the cost is approximate about $15.
 
+![](./image/cost.png)
+
+
+- Azure Subscription - In this project I will use my Azure Students Subcriptions which will give us $100 free credits.
 - Azure Data Factory - Azure Data Factory is used for orchestrating and automating the data pipeline.
 
 - Azure Databricks - Azure Databricks is used for data transformation and processing.
