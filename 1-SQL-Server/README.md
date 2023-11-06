@@ -11,11 +11,12 @@
 ## Overview
   Open the SSMS (SQL Server Management Studio), restore database with the file in the folder "AdventureWorkDB/AdventureWorksLT2017.bak"
 
-![](./restore-database.png)
+![](./image/restore-database.png)
 
-## Demo
-- Click the link to the Demo:  
-  [Link](https://www.youtube.com/watch?v=xLFjE2WJaoM)
+Then you need to create login and set your privilege, you can do that following the file ""./script/createlogin.sql""
+
+![](./image/run-script.pngpng)
+
 
 ## Contact
 Please feel free to contact me if you have any questions.
