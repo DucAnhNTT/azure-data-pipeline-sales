@@ -25,15 +25,12 @@ You can configure and manage Integration Runtimes in Azure Data Factory to defin
 
 ![](./image/auto-resolve-integration.png)
 
-There something that you should consider when we move on is the cost of the Self-hosted Integration Runtime which will be created next down below:
+There something that you should consider when we move on is the cost of the Self-hosted Integration Runtime which will be created to go on in this project, the details is down below:
 
 ![](./image/self-hosted-pricing.png)
 
-It's always a best pratice to store your credential in some place safe and secure, in Azure we have Key Vault to sovle that problem.
 
-Create your Key Vault and choose the Resource Group we have created for this project (If not you can create one from here)
 
-![](./image/key-vault-init.png)
 
 
 ## Contact
