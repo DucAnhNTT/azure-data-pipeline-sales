@@ -13,9 +13,15 @@
 
 ![](./image/restore-database.png)
 
-Then you need to create login and set your privilege, you can do that following the file ""./script/createlogin.sql""
+Then you need to create login and set your privilege in SSMS, you can do that following the file "./script/createlogin.sql", now run the simple Select query below to check if it is set or not.
 
 ![](./image/run-script.png)
+
+It's always a best pratice to store your credential in some place safe and secure, in Azure we have Key Vault to sovle that problem.
+
+Create your Key Vault and choose the Resource Group we have created for this project (If not you can create one from here)
+
+![](./image/key-vault-init.png)
 
 
 ## Contact
