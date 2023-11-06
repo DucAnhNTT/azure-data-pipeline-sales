@@ -1,21 +1,23 @@
 # Azure end-to-end Data Pipeline from On-prem to Report 
 
 This project is simply about making and running a complete system that handles data. We use Azure services to change, store, and visualize data.
+
+
+
 A good use case of this project is migrating the on-prem database to Cloud. I will guide you step by step to complete this project in each section. Let's go!
 
 ### Table of contents
 
 * [Architecture diagram](#architecture-diagram)
 * [Overview](#overview)
+  * [Resource Group](#resource-group)
+  * [Database Schema](#database-schema)
+  * [Building Report](#building-Report)
+  * [Data Lake Architecture](#datalake-architecture)
+
+  ### Building report
 * [How it works](#how-it-works)
 * [Prerequisites](#prerequisites)
-* [Quick Start](#quick-start)
-    * [Azure Integration Runtime](#azure-integration-runtime)
-    * [Azure Data Lake Storage Gen2](#azure-datalake)
-    * [Azure Databricks](#azzure-databrick)
-    * [Azure Data Factory](#azure-data-factory)
-    * [Azure Synapse Analytics](#azure-synapse-analytics)
-    * [Power BI](#power-bi)
 * [Demo](#demo)
 * [Contact](#contact)
 
