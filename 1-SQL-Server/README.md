@@ -11,7 +11,7 @@
 ## Overview
   Open the SSMS (SQL Server Management Studio), restore database with the file in the folder "AdventureWorkDB/AdventureWorksLT2017.bak"
 
-  ![](./1 - SQL Server/restore-database.png)
+  ![](./1-SQL-Server/restore-database.png)
 
 ## Demo
 - Click the link to the Demo:  
