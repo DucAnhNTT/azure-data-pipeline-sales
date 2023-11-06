@@ -59,10 +59,6 @@ Azure Data Lake Storage Gen2: Serves as the data lake for ingesting raw data.
 
 Azure Databricks: Powers ETL (Extract, Transform, Load) processes for data processing.
 
-### Data Modeling:
-
-Azure Data Factory: Used for defining and applying data models on top of the structured data.
-
 ### Data Visualization:
 
 Power BI: Provides a rich and interactive interface for data exploration and visualization.
@@ -71,9 +67,7 @@ Power BI: Provides a rich and interactive interface for data exploration and vis
 
 Azure Data Factory: Manages and schedules data pipeline workflows.
 
-Azure Synapse Analytics:
-
-Provides a unified experience to ingest, prepare, manage, and serve data for immediate business intelligence and machine learning needs.
+Azure Synapse Analytics: Provides a unified experience to ingest, prepare, manage, and serve data for immediate business intelligence and machine learning needs.
 
 
   
