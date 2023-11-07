@@ -81,8 +81,12 @@ In the source we extract the data from table name.
 And then store it in the sink.
 ![Alt text](image/copy-sink.png)
 
-  * [Transfrom from Bronze to Silver layer](#transform-1)
-  
+### Transfrom from Bronze to Silver layer
+  Now move to the next part, which is using Azure Databrick to transform the data, you have to connect to Azure Databrick somehow right, create two notebooks then create new Databricks Linked Service, and enter your credentials:
+  You need to have Access token of Azure Databrick to connect to it, click your mail on the right of your screen->User Setting->Developer->Generate new access token
+![Alt text](image/access-token.png)
+  Now you can connect to your databrick and run some notebooks:
+  ![Alt text](image/databrick-connect.png)
   * [Transfrom from Silver to Gold layer](#transform-2)
     
 ## Demo
