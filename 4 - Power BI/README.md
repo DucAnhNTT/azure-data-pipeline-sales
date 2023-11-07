@@ -38,7 +38,7 @@ Click to Model view, you see that two of the table that haven't been referenced 
 ![Alt text](image/8.png)
 
 ## Congrats
-If you're considering broadening the scope of this project, here are some intriguing suggestions:
+You have completed this project! and If you're considering broadening the scope of this project, here are some intriguing suggestions:
 
 1. Experiment with dbt (Data Build Tool) for seamless data integration.
 2. Develop a comprehensive Data Warehouse.
