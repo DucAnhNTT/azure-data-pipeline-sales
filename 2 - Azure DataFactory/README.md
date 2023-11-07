@@ -60,8 +60,20 @@ Then create new Linked Service with the configuration below:
 
 ![Alt text](image/config-connect-sql-on-prem.png)
 
+After that in the Setting of Look up activity set the query that i have create in the folder "script/getschema.sql"
 
-  * [Copy each table to Bronze layer](#copy-to-bronze)
+### Copy each table to Bronze layer
+Create a Foreach activity, then double click into that, in here drag and drop Copy activity, the result of the Look up activity before give us a list of table in the database. So what we do here is from each table copy the data and put it to the bronze layer.
+
+Take the output of Lookup acitivity
+![Alt text](image/output-lookup.png)
+  
+Copy activity in Foreach, we need to have table from the source and some where in the sink.
+In the source we extract the data from table name.
+![Alt text](image/copy-source.png)
+And then store it in the sink 
+![Alt text](image/copy-sink.png)
+
   * [Transfrom from Bronze to Silver layer](#transform-1)
   * [Transfrom from Silver to Gold layer](#transform-2)
 
