@@ -5,13 +5,13 @@ Power BI is a unified, scalable platform for self-service and enterprise busines
 
 * [Overview](#overview)
   * [Power BI desktop](#pwbi-desktop)
-* [Congrats!][#congrats]
+* [Congrats!](#congrats)
 * [Demo](#demo)
 * [Contact](#contact)
 
 ## Overview
 ### Power BI desktop
-I will use Power BI desktop for this project, if you want, choose any BI tools you want to go with Tableau,...
+I will use Power BI desktop for this project, if you want, choose any BI tools you want to go with like Tableau, etc...
 
 ![Alt text](image/screen.png)
 
