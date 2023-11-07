@@ -17,20 +17,45 @@ You can configure and manage Integration Runtimes in Azure Data Factory to defin
 ### Table of contents
 
 * [Overview](#overview)
-* [Demo](#demo)
+  * [Integration Runtime](#integration-runtime)
+  * [Price for IR](#price-for-ir)
+* [Data Pipeline](#data-pipeline)
+  * [Look up table name](#look-up)
+  * [Copy each table to Bronze layer](#copy-to-bronze)
+  * [Transfrom from Bronze to Silver layer](#transform-1)
+  * [Transfrom from Silver to Gold layer](#transform-2)
 * [Contact](#contact)
 
 ## Overview
+### Integration Runtime
   After you launch the Azure DataFactory, move to the manage tab, and there you will see the AutoResolveIntegrationRuntime (The first one) which I mention above is how Azure service connect to each other in general.
-
 ![](./image/auto-resolve-integration.png)
 
+Create new Integration Runtime which we will need to connect to our on-prem SQL Server database.
+New->Azure, Self-hosted -> Self-hosted -> Type the name and create. After that you will have something similar to this
+![Alt text](image/integration-runtime.png)
+
+I really recommend to choose the Option 1, then you click install and wait for it, it will automatically connect your local pc to the Cloud enviroment. Kinda amazing right?. Mine connect through VPN so it have a little bit of limited bandwidth but It's not the matter let's go ahead!
+![Alt text](image/connected-IR.png)
+
+### Price for IR
 There something that you should consider when we move on is the cost of the Self-hosted Integration Runtime which will be created to go on in this project, the details is down below:
 
 ![](./image/self-hosted-pricing.png)
 
+## Data pipeline
+Our pipeline gonna look like this, and let's go through each one.
 
+![](./image/ingestion.png)
 
+### Look up table name
+  Choose the activities tab on your left side and look for 'Look up' activity, drag and drop to the pipeline, then click to that activity in the setting tab
+-> Source dataset -> create new source 
+![](image/sql-server-on-prem.png)
+
+  * [Copy each table to Bronze layer](#copy-to-bronze)
+  * [Transfrom from Bronze to Silver layer](#transform-1)
+  * [Transfrom from Silver to Gold layer](#transform-2)
 
 
 ## Contact

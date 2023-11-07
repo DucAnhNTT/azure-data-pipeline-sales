@@ -8,7 +8,6 @@
   * [Restore Database](#restore-database)
   * [Create credential](#create-credential)
   * [Store Secrets](#store-secrets)
-* [Demo](#demo)
 * [Contact](#contact)
 
 ## Overview
