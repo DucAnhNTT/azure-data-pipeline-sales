@@ -32,7 +32,7 @@ You can configure and manage Integration Runtimes in Azure Data Factory to defin
 ![](./image/auto-resolve-integration.png)
 
 Create new Integration Runtime which we will need to connect to our on-prem SQL Server database.
-New->Azure, Self-hosted -> Self-hosted -> Type the name and create. After that you will have something similar to this
+New->Azure, Self-hosted -> Self-hosted -> Type the name and create. After that you will have something similar to this.
 ![Alt text](image/integration-runtime.png)
 
 I really recommend to choose the Option 1, then you click install and wait for it, it will automatically connect your local pc to the Cloud enviroment. Kinda amazing right?. Mine connect through VPN so it have a little bit of limited bandwidth but It's not the matter let's go ahead!
@@ -49,9 +49,17 @@ Our pipeline gonna look like this, and let's go through each one.
 ![](./image/ingestion.png)
 
 ### Look up table name
-  Choose the activities tab on your left side and look for 'Look up' activity, drag and drop to the pipeline, then click to that activity in the setting tab
--> Source dataset -> create new source 
+  Choose the activities tab on your left side and look for 'Look up' activity, drag and drop to the pipeline, then click to that activity in the setting tab -> Source dataset -> create new source -> find SQL Server and choose it.
+
 ![](image/sql-server-on-prem.png)
+
+Then create new Linked Service with the configuration below:
+  Server name: I create one default SQL Server that's why it's name my computer.
+  Database name: AdventureWorksLT2017
+  User name and password: We have created one in our On-prem database, and create Key Vault to store that (You can also enter manually, don't be so worried about that) -> Test connection to check everything alright.
+
+![Alt text](image/config-connect-sql-on-prem.png)
+
 
   * [Copy each table to Bronze layer](#copy-to-bronze)
   * [Transfrom from Bronze to Silver layer](#transform-1)
