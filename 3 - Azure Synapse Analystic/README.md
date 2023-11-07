@@ -5,7 +5,7 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 ### Table of contents
 
 * [Overview](#overview)
-  *[Workspace](#work-space)
+  * [Workspace](#work-space)
   * [SQL Pools](#sql-pool)
   * [Database On-Cloud](#db-oncloud)
   * [Pipeline](#pipeline)
@@ -14,7 +14,7 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 
 ## Overview
 ### Workspace
-Go to Azure UI -> Create Azure Synapse Analystic -> Resource Group (is the one that we use for the project)
+Go to Azure UI -> Create Azure Synapse Analystic -> Resource Group (choose the one that we use for the project)
 
 ![Alt text](image/synapse-setting.png)
 ### SQL Pools
