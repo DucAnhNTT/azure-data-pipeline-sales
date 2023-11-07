@@ -88,19 +88,9 @@ And then store it in the sink.
   Now you can connect to your databrick and run some notebooks:
   ![Alt text](image/databrick-connect.png)
 
-In Azure Databricks, import 3 file .py in the folder "Azure Databricks" to it, then the sequence is:
-1. storagemount.py
-2. bronzeTosilver.py
-3. silverTogold
-
-In each file, I have already put documentation to each code, and you can follow along. And change in storagemount.py you need to change the credentials to connect to your service:
-![Alt text](image/mounting.png)
 
 ### Transfrom from Silver to Gold layer
-In the setting of the two notebooks remember to browse to the file we have imported and choose the right note book
-![Alt text](image/setting-silver-to-gold-databricks.png)
-
-
+    
 ## Demo
 - Click the link to the Demo:  
   [Link](https://www.youtube.com/watch?v=xLFjE2WJaoM)
