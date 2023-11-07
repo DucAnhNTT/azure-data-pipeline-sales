@@ -1,5 +1,5 @@
 # Azure DataFactory
- Like I said, Azure Data Factory is used for orchestrating and automating the ETL. We can use it and debug on our go.
+Azure Data Factory is used for orchestrating and automating the ETL. We can use it and debug on our go.
 
  There something you should know is how the service in Azure connect to each other, we have Integration Runtime (IR) which is a crucial component that allows you to move data from various source systems to different destination systems. It's essentially a compute infrastructure that provides data integration capabilities across Azure data services, on-premises, and other cloud systems.
 Integration Runtime comes in three different types:
@@ -12,6 +12,11 @@ The choice of Integration Runtime depends on your data integration needs:
 •	Use Azure-SSIS IR when you have existing SSIS packages that need to be moved to or run in Azure.
 You can configure and manage Integration Runtimes in Azure Data Factory to define where your data should be moved and how it should be transformed. It's an essential component for building data pipelines in Azure Data Factory, enabling you to perform tasks like data copying, transformation, and data movement efficiently.
 
+What is Delta format in Databricks?
+The Delta format, created by Databricks, builds upon the Parquet format and adds several useful features. These features include the ability to easily track different versions of data and handle schema changes.
+With Delta format, you can think of it as a way to keep a historical record of your data. It's like having a document that shows all the changes made to a piece of writing over time. So, if your data changes or updates, Delta format keeps a log of those changes, making it simple to see how your data has evolved.
+Additionally, Delta format is really good at handling changes in the structure of your data. Imagine you have a table with specific columns, and later on, you want to add new columns or change the existing ones. Delta format lets you do this without any trouble, making it easy to work with evolving data.
+Because of these advantages, Databricks recommends using Delta format to store your data in data lakes. It's a smart choice for keeping your data organized, adaptable, and user-friendly, especially when you need to perform various data analysis and processing tasks.
 
 
 ### Table of contents
@@ -109,10 +114,10 @@ In each file, I have already put documentation to each code, and you can follow 
 ![Alt text](image/mounting.png)
 
 ### Transfrom from Silver to Gold layer
-In the setting of the two notebooks remember to browse to the file we have imported and choose the right note book
+In the setting of the two notebooks remember to browse to the file we have imported and choose the right note book. 
 ![Alt text](image/setting-silver-to-gold-databricks.png)
 
-
+And now the pipeline is already 2/3 of the path! What would be next you wonder? We gonna take the data from gold layer which a final cleaneast form of data to Synapse Analystic, On Cloud SQL Database, and use Power BI to connect and visualize it!!
 ## Demo
 - Click the link to the Demo:  
   [Link](https://www.youtube.com/watch?v=xLFjE2WJaoM)
