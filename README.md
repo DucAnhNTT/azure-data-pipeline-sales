@@ -78,13 +78,13 @@ What you need to run the project:
 - I have play around a lot in this project and the cost is approximate about $15.
 
 ![](./image/cost.png)
- [KEY VAULT ROLE](https://stackoverflow.com/questions/69971341/unable-to-create-secrets-in-azure-key-vault-if-using-azure-role-based-access-con)
+ [Key Vault Role](https://stackoverflow.com/questions/69971341/unable-to-create-secrets-in-azure-key-vault-if-using-azure-role-based-access-con)
 
 [Access role to storage account](https://learn.microsoft.com/en-us/answers/questions/779065/error-this-request-is-not-authorized-to-perform-th)
 
 [Self-hosted pricing](https://azure.microsoft.com/en-us/pricing/details/data-factory/data-pipeline/)
 
-[Mount azure databrick and adls gen 2](https://techcommunity.microsoft.com/t5/azure-paas-blog/mount-adls-gen2-or-blob-storage-in-azure-databricks/ba-p/3802926)
+[Mount Azure Databrick and ADLS Gen 2](https://techcommunity.microsoft.com/t5/azure-paas-blog/mount-adls-gen2-or-blob-storage-in-azure-databricks/ba-p/3802926)
 
 
 
