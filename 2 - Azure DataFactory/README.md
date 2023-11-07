@@ -80,7 +80,19 @@ In the source we extract the data from table name.
 ![Alt text](image/copy-source.png)
 And then store it in the sink.
 ![Alt text](image/copy-sink.png)
+Here you have to have somewhere to store your raw data right? I will pick ADLS Gen 2 for this. Go to the Azure UI, create the Storage Account [An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS.](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#:~:text=An%20Azure%20storage%20account%20contains,world%20over%20HTTP%20or%20HTTPS.), and make sure that you enable Hiearchy namespace (which make our folder become tree structure for ease of using)
 
+After that your setting of Storage Account is kinda similar to this.
+![Alt text](<2.1 - Azure Datalake Gen 2/adlsgen2-setting.png>)
+
+Create three container which represent our layer:
+![Alt text](<2.1 - Azure Datalake Gen 2/adlsgen2-container.png>)
+
+In the sink Copy activity we will store the data in parquet format which column based and save the data of the file.
+![Alt text](image/sink-store-by-value.png)
+![Alt text](image/adls-gen2-linked-service.png)
+
+The File path: bronze/@{concat(dataset().schemaname,'/',dataset().tablename)}/@{concat(dataset().tablename,'.parquet')}, which will store the parquet file in a parent structure.
 ### Transfrom from Bronze to Silver layer
   Now move to the next part, which is using Azure Databrick to transform the data, you have to connect to Azure Databrick somehow right, create two notebooks then create new Databricks Linked Service, and enter your credentials:
   You need to have Access token of Azure Databrick to connect to it, click your mail on the right of your screen->User Setting->Developer->Generate new access token
